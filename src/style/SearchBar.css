@@ -1,0 +1,62 @@
+.search-nav-bar {
+  background-color: white;
+  box-sizing: border-box;
+  height: 6em;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-bottom: 1px solid #dfe4e5;
+  margin-bottom: 10em;
+}
+
+.button-container {
+  margin-left: 9%;
+  margin-top: .6em;
+}
+
+.boarding-button {
+  border-left-width: 1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #0f748c;
+  border-color: #69bbc0;
+}
+
+.boarding-button:focus {
+  border-color: #69bbc0;
+  background-color: #69bbc0;
+  color: #fff;
+}
+
+.boarding-button:hover {
+  color: #0f748c;
+  border-color: #69bbc0;
+}
+
+.house-sitting-button {
+  border-left-width: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: #0f748c;
+  border-color: #69bbc0;
+}
+
+.house-sitting-button:focus {
+  border-color: #69bbc0;
+  background-color: #69bbc0;
+  color: #fff;
+}
+
+.house-sitting-button:hover {
+  color: #0f748c;
+  border-color: #69bbc0;
+}
+
+.type-of-vaycay {
+  max-width: 7em;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #2a494b;
+  cursor: pointer;
+}
