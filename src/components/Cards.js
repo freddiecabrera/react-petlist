@@ -2,39 +2,31 @@ import React from 'react';
 import styles from 'style/Cards';
 const { array } = React.PropTypes;
 
-const capitalize = (word) => (
-	word
-		.toLowerCase()
-		.replace(/(^| )(\w)/g, x => x.toUpperCase())
-);
-
-const firstLetter = (word) => (
-  word
-    .toLowerCase()
-    .charAt(0)
-    .toUpperCase() + '.'
-);
+const capitalize = (word) => 	word.toLowerCase().replace(/(^| )(\w)/g, x => x.toUpperCase());
+const firstLetter = (word) => word.toLowerCase().charAt(0).toUpperCase() + '.';
 
 const showEllipses = (desc) => {
   if (desc.length > 48 && desc.charAt(48) !== ' ') {
-  	return desc.split(' ')
-               .slice(0, desc.split(' ').length - 1)
-               .join(' ') + '...';
+  	return desc
+			.split(' ')
+			.slice(0, desc.split(' ').length - 1)
+      .join(' ') + '...';
   }
   else if (desc.length > 48) {
-    return desc.split(' ')
-               .slice(0, desc.split(' ').length - 1)
-               .join(' ') + '...';
+    return desc
+			.split(' ')
+			.slice(0, desc
+			.split(' ').length - 1).join(' ') + '...';
   }
   return desc;
 };
 
 const createURL = (url) => (
   url
-    .replace(/ +/g,' ')
-    .replace(/[^a-zA-Z\_ ]/g, '')
-  	.replace(/[-']/g, '')
-  	.replace(/ /g,'-')
+		.replace(/ +/g,' ')
+		.replace(/[^a-zA-Z\_ ]/g, '')
+		.replace(/[-']/g, '')
+		.replace(/ /g,'-')
 );
 
 const Cards = props => (
