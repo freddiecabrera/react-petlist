@@ -13,7 +13,6 @@ class Search extends Component {
   }
 
   render() {
-    console.log('props', this.props);
     return (
       <div>
         <SearchBar fetchData={this.props.fetchData} />
@@ -25,7 +24,7 @@ class Search extends Component {
 
 Search.propTypes = {
   fetchData: React.PropTypes.func.isRequired,
-  searchResponse: React.PropTypes.arrayOf(React.PropTypes.object),
+  response: React.PropTypes.arrayOf(React.PropTypes.object),
   fetching: React.PropTypes.bool
 };
 

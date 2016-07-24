@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from 'style/Cards';
-
+const { array } = React.PropTypes;
 
 const capitalize = (word) => (
 	word
@@ -54,5 +54,9 @@ const Cards = props => (
     </div>
   </div>
 );
+
+Cards.propTypes = {
+	list: array.isRequired
+};
 
 export default Cards;

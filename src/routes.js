@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Router, hashHistory, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
-import store from 'store'
+import store from 'store';
 import Main from 'components/Main';
 import Welcome from 'components/Welcome';
 import Search from 'containers/Search';
@@ -17,4 +17,4 @@ const routes = () => (
   </Provider>
 );
 
-export default routes
+export default routes;

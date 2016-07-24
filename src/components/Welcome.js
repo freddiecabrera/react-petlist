@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import styles from 'style/Welcome';
 
-const Welcome = props => (
+const Welcome = () => (
   <div className='container-fluid'>
     <div className='bgImageContainer'>
       <img src='https://images.unsplash.com/photo-1453369569379-52cd4fc989af?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3a9edb962b9552d15a3d394974136667' alt='background-image' className='bgImage'/>

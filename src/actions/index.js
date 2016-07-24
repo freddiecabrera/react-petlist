@@ -1,8 +1,4 @@
-import {
-  IS_FETCHING,
-  FETCHING,
-  FETCH_DATA
-} from './types';
+import { IS_FETCHING, FETCHING, FETCH_DATA } from './types';
 import axios from 'axios';
 
 const dispatcher = (dispatch, url) => {
@@ -12,10 +8,11 @@ const dispatcher = (dispatch, url) => {
       const data = response.data.search;
       dispatch({ type: IS_FETCHING, bool: false });
       dispatch({ type: FETCH_DATA, data});
-    }).catch(response => {
-      console.log(response)
+    })
+    .catch(response => {
+      console.log(response);
     });
-}
+};
 
 export const fetchData = url => (
   function (dispatch) {

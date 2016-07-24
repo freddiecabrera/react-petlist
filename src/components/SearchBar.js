@@ -17,7 +17,7 @@ const SearchBar = props => (
   </div>
 );
 
-SearchBar.PropTypes = {
+SearchBar.propTypes = {
   fetchData: func.isRequired
 };
 
