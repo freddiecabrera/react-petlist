@@ -1,12 +1,12 @@
 import React from 'react';
-const { element } = React.PropTypes;
+const { func } = React.PropTypes;
 
 const Main = props => (
   <div>{props.children}</div>
 );
 
-Main.PropTypes = {
-  children: element.isRequired
+Main.propTypes = {
+  children: func.isRequired
 };
 
 export default Main;

@@ -5,6 +5,7 @@ import { SEARCH } from '../endpoints';
 import SearchBar from 'components/SearchBar';
 import Loader from 'components/Loader';
 import Cards from 'components/Cards';
+const { func, arrayOf, object, bool } = React.PropTypes;
 
 class Search extends Component {
 
@@ -23,9 +24,9 @@ class Search extends Component {
 };
 
 Search.propTypes = {
-  fetchData: React.PropTypes.func.isRequired,
-  response: React.PropTypes.arrayOf(React.PropTypes.object),
-  fetching: React.PropTypes.bool
+  fetchData: func.isRequired,
+  response: arrayOf(React.PropTypes.object),
+  fetching: bool
 };
 
 const mapStateToProps = state => ({
